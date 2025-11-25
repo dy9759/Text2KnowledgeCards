@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@openrouter/sdk": "^0.1.27",
+    "dotenv": "^17.2.3"
+  }
+}

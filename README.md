@@ -8,8 +8,6 @@
 
 **🚀 AI-Powered Knowledge Card and Infographic Generation System**
 
-Transform plain text into beautiful, shareable knowledge cards and infographics
-
 [📖 Documentation](#documentation) • [🛠️ Installation](#installation) • [🎯 Features](#features) • [🎨 Examples](#examples)
 
 </div>
@@ -42,9 +40,6 @@ Text2KnowledgeCards is an **intelligent AI-powered system** that transforms text
 git clone https://github.com/your-username/Text2KnowledgeCards.git
 cd Text2KnowledgeCards
 
-# Navigate to the project directory
-cd Text2KnowledgeCard
-
 # Install dependencies
 npm install
 
@@ -72,27 +67,28 @@ console.log('Generated infographic:', result.infographicData);
 
 ```
 Text2KnowledgeCards/
-├── Text2KnowledgeCard/         # 🎯 Main application directory
-│   ├── 🔧 core-system/         # Main generation system
-│   │   ├── 📄 full-infographic-system.ts     # Core system implementation
-│   │   ├── 🖼️ image-generator.ts            # Image generation module
-│   │   └── 📊 infographic-generator.ts      # Infographic creation logic
-│   ├── 🎨 skills/             # Generation skills and templates
-│   │   ├── 🤖 aitemplates-skills/           # AI template integration
-│   │   ├── 👥 anthropic-skills/             # Anthropic AI skills
-│   │   ├── 🚀 composio-skills/              # Productivity enhancement skills
-│   │   ├── 💎 core-skills/                  # Essential generation skills
-│   │   ├── 💾 backup-skills/                # Backup and recovery skills
-│   │   └── 🔧 missing-skills/               # Additional specialized skills
-│   ├── 📚 docs/              # Documentation and guides
-│   ├── ⚙️ config/            # Configuration files
-│   ├── 📦 generated-images/   # Generated visual assets
-│   ├── 📊 generated-infographics/ # Generated infographic files
-│   ├── 🔧 scripts/           # Utility and automation scripts
-│   ├── 📝 logs/              # System logs
-│   ├── 🏗️ SuperClaude/       # Claude integration components
-│   ├── 🎯 .claude/           # Claude-specific configurations
-│   └── 📋 temp/              # Temporary files and cache
+├── 🔧 core-system/              # Main generation system
+│   ├── 📄 full-infographic-system.ts     # Core system implementation
+│   ├── 🖼️ image-generator.ts            # Image generation module
+│   └── 📊 infographic-generator.ts      # Infographic creation logic
+├── 🎨 skills/                  # Generation skills and templates
+│   ├── 🤖 aitemplates-skills/           # AI template integration
+│   ├── 👥 anthropic-skills/             # Anthropic AI skills
+│   ├── 🚀 composio-skills/              # Productivity enhancement skills
+│   ├── 💎 core-skills/                  # Essential generation skills
+│   ├── 💾 backup-skills/                # Backup and recovery skills
+│   └── 🔧 missing-skills/               # Additional specialized skills
+├── 📚 docs/                    # Documentation and guides
+├── ⚙️ config/                  # Configuration files
+├── 📦 generated-images/         # Generated visual assets
+├── 📊 generated-infographics/   # Generated infographic files
+├── 🔧 scripts/                 # Utility and automation scripts
+├── 📝 logs/                    # System logs
+├── 🏗️ SuperClaude/             # Claude integration components
+├── 🎯 .claude/                 # Claude-specific configurations
+├── 📋 temp/                    # Temporary files and cache
+├── 📦 package.json             # Project dependencies
+├── 🔒 package-lock.json        # Dependency lock file
 └── README.md                  # This file
 ```
 
@@ -378,9 +374,6 @@ The system includes multiple skill categories for enhanced functionality:
 
 ### Project Setup
 ```bash
-# Navigate to the project directory
-cd Text2KnowledgeCard
-
 # Install development dependencies
 npm install --dev
 
@@ -463,9 +456,6 @@ We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBU
 git clone https://github.com/your-username/Text2KnowledgeCards.git
 cd Text2KnowledgeCards
 
-# Navigate to main application directory
-cd Text2KnowledgeCard
-
 # Create feature branch
 git checkout -b feature/your-feature
 
@@ -481,7 +471,7 @@ git push origin feature/your-feature
 
 - **📧 Email**: support@text2knowledgecards.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/your-username/Text2KnowledgeCards/issues)
-- **📖 Documentation**: [Full Documentation](Text2KnowledgeCard/docs/)
+- **📖 Documentation**: [Full Documentation](docs/)
 - **💬 Community**: [Discord Server](https://discord.gg/text2knowledgecards)
 
 ## 📄 License
@@ -503,6 +493,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Made with ❤️ by the AI generation community
 
-[⭐ Star this repo](https://github.com/your-username/Text2KnowledgeCards) • [🔧 Report Issues](https://github.com/your-username/Text2KnowledgeCards/issues) • [📖 View Full Docs](Text2KnowledgeCard/docs/)
+[⭐ Star this repo](https://github.com/your-username/Text2KnowledgeCards) • [🔧 Report Issues](https://github.com/your-username/Text2KnowledgeCards/issues) • [📖 View Full Docs](docs/)
 
 </div>
