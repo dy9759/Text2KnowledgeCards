@@ -184,38 +184,42 @@ function convertToChalkboardImagePrompt(infographicContent: string): string[] {
     }
   });
 
-  // Create chalkboard-style image prompt
-  const chalkboardPrompt = `Create a horizontal 16:9 educational infographic with a black chalkboard background using colored chalk style.
+  // Create professional chalkboard-style image prompt with Chinese text and punchy layout
+  const chalkboardPrompt = `请创建一个专业的中文黑板风格教育信息卡，要求如下：
 
-Topic: "${mainTitle}"
+主题："${mainTitle}"
 
-Content to Include:
+**核心内容：**
 ${keyConcepts.slice(0, 8).map((concept, i) => `${i + 1}. ${concept}`).join('\n')}
 
-Visual Style Requirements:
-- Black chalkboard background (essential)
-- ALL text and drawings in colored chalk style only
-- No realistic illustrations - only chalk drawings
-- Minimalistic cartoon elements and simple icons
-- Use multiple chalk colors: white, yellow, blue, green, red, pink
-- Include simple portrait sketches if people are mentioned
-- Add decorative chalk elements: borders, arrows, underlines
-- Use "nano banana pro" drawing style - cute, simple, educational
+**关键规范：**
+1. **语言要求**：所有文字必须使用中文（Chinese text only）
+2. **排版方式**：采用PUNCH（冲击力）展示方式，信息层次分明，具有视觉冲击力
+3. **页面布局**：所有内容必须完整排版在一页内（建议16:9横向或9:16竖向）
+4. **分辨率**：输出高分辨率4K（3840x2160或2160x3840）
+5. **文字处理**：
+   - 所有中文必须作为独立文字图层处理
+   - 确保印刷级锐利，每个字都清晰可读
+   - 字体大小适中，避免过小
+6. **黑板风格**：
+   - 逼真的黑板背景纹理，深色黑色
+   - 使用彩色粉笔效果：
+     • 白色：主要文字内容
+     • 黄色：重点强调
+     • 蓝色：补充信息
+     • 红色：关键要点
+     • 绿色：示例或应用
+   - 添加粉笔手绘的装饰元素：边框、分割线、箭头、小图标
+   - 保留真实的粉笔痕迹和纹理效果
 
-Layout:
-- Horizontal 16:9 format
-- Clean, organized sections with ample whitespace
-- Clear hierarchy with title, subtitles, and bullet points
-- Use chalk-drawn icons and simple diagrams
-- Include arrows and connecting lines where appropriate
+7. **视觉设计**：
+   - 信息架构清晰，主次有序
+   - 使用简洁的图标或插图辅助说明
+   - 色彩对比强烈，重点内容突出
+   - 保持专业教育的视觉风格
+   - 适当的留白，避免内容拥挤
 
-Text Style:
-- Clear, readable chalk font
-- Keywords highlighted with different colors
-- Minimal text - focus on key points only
-- Use uppercase for emphasis
-
-Remember: Everything must look like it was drawn with colored chalk on a blackboard!`;
+输出要求：高质量教育信息卡，中文黑板风格，具有视觉冲击力和专业感，4K分辨率`;
 
   console.log(`✅ Chalkboard prompt generated with ${keyConcepts.length} key concepts`);
   return [chalkboardPrompt];
